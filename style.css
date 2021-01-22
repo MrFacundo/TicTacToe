@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	background: #101010;
+}
+
+body {
+	font-family: "Courier";
+	color: #ffdb99;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	position: relative;
+	margin-top: 40px;
+	background: #101010;
+	padding: 30px;
+}
+
+.title {
+	text-align: center;
+}
+
+.title span {
+	color: #4bb3fd;
+}
+
+.status,
+.restart {
+	display: flex;
+	margin: 25px;
+	font-size: 3vh;
+	justify-content: space-around;
+	height: 30px;
+}
+
+.select-oponent {
+	position: absolute;
+	top: 12vh;
+	left: 0;
+	font-size: 4vh;
+	font-weight: bold;
+}
+
+.restart,
+.select-oponent {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.board {
+	display: inline-grid;
+	grid-template-columns: repeat(3, 18vh);
+	grid-template-rows: repeat(3, 18vh);
+	grid-gap: 1vh;
+	background: #4bb3fd;
+	margin: 50px;
+}
+
+.cell {
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	background: #101010;
+	font-family: "Varela Round", sans-serif;
+	font-weight: bold;
+	font-size: 18vh;
+}
+
+.win {
+	color: #4bb3fd;
+}
+
+.draw {
+	color: #ff312e;
+}
